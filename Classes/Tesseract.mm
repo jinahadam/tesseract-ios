@@ -155,4 +155,9 @@ namespace tesseract {
     _tesseract->SetImage((const unsigned char *) _pixels, width, height, sizeof(uint32_t), width * sizeof(uint32_t));
 }
 
+-(void)clear {
+    _tesseract->Clear();
+}
+
+
 @end
